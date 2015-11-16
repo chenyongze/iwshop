@@ -1,0 +1,1 @@
+<a class="topNavItem" href="{$docroot}?/Wdmin/logOut/"><span>退出系统</span></a> <a class="topNavItem" target="_blank" href="{$docroot}?/Wdmin/clearCacheAll">清除缓存</a> 

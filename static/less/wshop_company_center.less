@@ -1,0 +1,79 @@
+/**
+ * Desc
+ * @description Holp You Do Good But Not Evil
+ * @copyright   Copyright 2014-2015 <ycchen@iwshop.cn>
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chenyong Cai <ycchen@iwshop.cn>
+ * @package     Wshop
+ * @link        http://www.iwshop.cn
+*/
+
+
+@import "base_class.less";
+
+@import "base_topnav.less";
+
+@import "base_form.less";
+
+.comspreadstat {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.spread-item {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    margin: 10px 0;
+    font-size: 10pt;
+    text-align: center;
+    border-right: 1px solid #dedede;
+    margin-left: -1px;
+}
+.spread-item:last-child {
+    border: none;
+    margin-left: 0;
+}
+.spread-item i {
+    display: block;
+    width: 50px;
+    height: 0;
+    border-bottom: 1px dashed #dedede;
+    margin: 3px auto;
+    margin-top: 5px;
+}
+.spread-item b {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 4px;
+    font-family: Verdana;
+    color: rgb(255,85,0);
+}
+.ulist{
+    .backG();
+    padding:7px;
+    border-bottom:1px dashed #dedede;
+    img{
+        width:50px;
+        height:50px;
+        .borderRadius(30px);
+        .block();
+        .float(left);
+    }
+    .info{
+        margin-left:60px;
+    }
+    p{
+        margin:0;
+        padding:0;
+        font-size:12px;
+        line-height:23px;
+        b{
+            font-size: 12px;
+            font-weight: normal;
+            font-family: Verdana;
+            color: rgb(255,85,0);
+        }
+    }
+}

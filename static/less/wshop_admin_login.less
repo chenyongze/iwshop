@@ -1,0 +1,104 @@
+/**
+ * Desc
+ * @description Holp You Do Good But Not Evil
+ * @copyright   Copyright 2014-2015 <ycchen@iwshop.cn>
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chenyong Cai <ycchen@iwshop.cn>
+ * @package     Wshop
+ * @link        http://www.iwshop.cn
+*/
+
+@import "wshop_admin_base.less";
+
+@import "wshop_admin_form.less";
+
+.loginBody {
+    background-image: url('../images/admin_background/4.jpg');
+    background-position: center;
+    background-color: #f7f7f7;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login-form {
+    position:relative;
+    width: 370px;
+    padding: 59px 50px;
+    text-align: center;
+    padding-top: 45px;
+    overflow:hidden;
+    transition-duration:1.2s;
+    opacity:0;
+}
+
+.loginShow{
+    opacity:1;
+}
+
+.login-form p {
+    margin: 0;
+    padding: 0;
+    height: 22px;
+    margin-top: 14px;
+    background: url(../images/login/caption.png) center no-repeat;
+}
+.login-form img {
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#login-frame {
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    background: rgba(255, 255, 255, 0.6);
+}
+.login-gbtn {
+    font-weight: lighter;
+    font-size: 15px;
+    text-decoration: none;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    background: #44b549;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+}
+.login-gbtn:hover {
+    background: #27cc2e;
+}
+.login-item {
+    padding: 15px 12px;
+    padding-bottom: 0px;
+}
+.login-item .gs-text {
+    padding: 2px 3px;
+    border: none;
+    border-left: 2px solid #44b549;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.login-item .gs-text input {
+    font-size: 14px;
+}
+.login-item:first-child {
+    margin-top: 0;
+    padding-top: 14px;
+}
+#login {
+    width: 400px\9;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#copyrights{
+    color:#777;opacity: 0.8;font-size:12px;margin-top: 10px;
+}
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(255,255,255,0.4);
+}

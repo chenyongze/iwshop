@@ -1,0 +1,23 @@
+<div style="width:700px;margin:25px auto;">
+    <div style='height:3px;background: #44b549;'></div>
+    <div style='border:1px solid #dedede;border-top: none;font-family: Helvetica,Microsoft YaHei,Arial;'>
+        <div style='padding:15px;border-bottom: 1px solid #ddd;'>
+            <!--<img src='http://ent.ramalp.com/static/images/email_logo.jpg?v=1.0' height='50px' alt='logo' />-->
+        </div>
+        <div style='padding:15px;'>
+            <div style='font-family: Helvetica,Microsoft YaHei,Arial;font-size:14px;color:#555;'>
+                <p style='margin:10px 0;text-indent: 0;padding:0;'>亲爱的 {$toName} 您好：恭喜你通过了{$fromName}的代理审核。</p>
+                <p style='margin:10px 0;text-indent: 0;padding:0;'>代理平台：<a href="{$expcom}" target="_blank">{$expcom}</a></p>
+                <p style='margin:10px 0;text-indent: 0;padding:0;'>平台账号：<b>{$account}</b></p>
+                <p style='margin:10px 0;text-indent: 0;padding:0;'>平台密码：<b>{$password}</b></p>
+                <p style='margin:10px 0;text-indent: 0;padding:0;'>您的推广二维码：</p>
+                <p style='margin:10px 0;text-indent: 0;padding:0;'><a href="{$qrcode}" target="_blank"><img style="border:1px solid #ddd;" src="{$qrcode}" width="300px" height="300px" alt="二维码" /></a></p>
+            </div>
+        </div>
+        <div style='padding:10px 15px;background: #f7f7f7;border-top: 1px solid #ddd;font-family: Helvetica,Microsoft YaHei,Arial;font-size:12px;color:#666;line-height: 2em;'>
+            <p style='margin:10px 0;text-indent: 0;padding:0;'>为了您能够正常收到来自{$fromName}的优惠信息和会员邮件，请将 <b style='font-weight: normal;color:#3264c8'>{$fromAddress}</b> 添加进您的通讯录。</p>
+            <p style='margin:10px 0;text-indent: 0;padding:0;'>您之所以收到这封邮件，是因为您曾经注册成为{$fromName}的用户。</p>
+            <p style='margin:10px 0;text-indent: 0;padding:0;'>本邮件由系统自动发出，请勿直接回复！</p>
+        </div>
+    </div>
+</div>

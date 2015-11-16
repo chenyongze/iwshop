@@ -1,0 +1,297 @@
+/**
+ * Desc
+ * @description Holp You Do Good But Not Evil
+ * @copyright   Copyright 2014-2015 <ycchen@iwshop.cn>
+ * @license     LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @author      Chenyong Cai <ycchen@iwshop.cn>
+ * @package     Wshop
+ * @link        http://www.iwshop.cn
+*/
+
+@colorGreen: #44b549;
+
+.boxShadow(@opacity: 0.1,@x: 0,@y: 1px,@len: 3px){
+    box-shadow: @x @y @len rgba(0,0,0,@opacity); 
+}
+
+.wdmin-login,.wdmin-main,.loginBody {
+    background-image:url('../images/admin_background/4.jpg');
+    background-position: center;
+    background-color:#f7f7f7;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wdmin-wrap {
+    overflow: hidden;
+    background: #fff;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    max-width: 1366px;
+    border-radius:3px;
+    min-width: 1000px;
+    margin:0 auto;
+}
+// 屏幕尺寸小于等于1366px时
+@media screen and (max-width: 1366px) {
+    #wdmin-wrap{
+        border:none;
+        border-radius:0;
+    }
+    #topnav .in{
+        padding-left:15px;
+        .topNavItem:first-child{
+            border-right: none !important;
+        }
+        .adminHead{
+            margin-right:9px;
+        }
+    }
+    #topnav{
+        margin-bottom:0 !important;
+        border-bottom:1px solid #DEDEDE !important;
+    }
+}
+// 顶部导航
+#topnav{
+    color:#555;
+    overflow: hidden;
+    background: #f7f7f7;
+    height: 49px;
+    line-height: 49px;
+    background: #FFF;
+    background: rgba(255,255,255,.9);
+    margin-bottom:10px;
+    .boxShadow(0.03, 1px, 1px, 2px);
+    b{
+        color:#222;
+        font-weight:normal;
+    }
+    .in{
+        max-width: 1368px;
+        min-width: 1000px;
+        margin:0 auto;
+        .left{
+            float:left;
+            a{
+                color:@colorGreen;
+                padding:0 2px;
+            }
+        }
+        .right{
+            float:right;
+            .topNavItem{
+                transition-duration:.15s;
+                text-decoration: none;
+                color:#555;
+                cursor: pointer;
+                padding: 0 8px;
+                display: block;
+                float: right;
+                &:hover{
+                    background: rgba(255,255,255,.6);
+                    span{
+                        color:@colorGreen;
+                    }
+                    padding: 0 15px;
+                }
+                span{
+                    display: block;
+                    height: 49px;
+                    line-height: 49px;
+                }
+            }
+            .adminHead{
+                width:35px;
+                float:right;
+                border-radius:100px;
+                margin-top:8px;
+                margin-left:8px;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+    }
+}
+
+#leftNav {
+    position:relative;
+    overflow: auto;
+    width: 160px;
+    float: left;
+    #copyrights{
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        text-align:center;
+        font-size:12px;
+        color:#999;
+        line-height:18px;
+        border-top:1px solid #dedede;
+        padding:5px 0;
+        background:#fefefe;
+        &:before{
+            content:'© ';
+        }
+    }
+    .subnavs{
+        display:none;
+        a{
+            display:block;
+            line-height: 38px;
+            background: url('../images/dot-big-1.png') 14px center no-repeat #fff;
+            background-size:12px;
+            padding-left: 35px;
+            font-size: 14px;
+            color: #444;
+            border-bottom: 1px solid #dfdfdf;
+            &:hover, &.hov{
+                color:@colorGreen;
+                background-image: url('../images/dot-big-3.png');
+                background-color: #fdfdfd;
+            }
+        }
+    }
+}
+
+#rightWrapper {
+    position: relative;
+    overflow: hidden;
+    box-shadow: -1px 0 2px rgba(0,0,0,0.1);
+    border-left: 1px solid #dedede;
+}
+
+.navItem {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #dedede;
+    cursor: pointer;
+    transition-duration: 120ms;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    height:45px;
+    padding-left:15px;
+    line-height:45px;
+}
+
+.navItem b {
+    float:left;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size:30px !important;
+    margin-top:7px;
+}
+
+.navItem i {
+    font-size:14px;
+    color:#666;
+    text-indent:12px;
+    display:inline-block;
+    letter-spacing:1px;
+}
+
+b.icount {
+    color:#777;
+    letter-spacing: normal;
+    font-size: 12px;
+    font-family: Verdana;
+    font-weight: normal;
+}
+
+.nav-count {
+    transition-duration: 200ms;
+    line-height: initial;
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    right: 10px;
+    background: #900;
+    color: #fff;
+    height: 14px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1px 5px;
+    font-size: 12px;
+}
+
+#navitem2 b {
+    background: url("../images/admin/iconfont-bingtu.png") center no-repeat;
+}
+
+#navitem3 b {
+    background-position: -204px -0px;
+}
+
+#navitem4 b {
+    background: url("../images/admin/iconfont-orders.png") center no-repeat;
+}
+
+#navitem5 b {
+    background: url("../images/admin/iconfont-productshipping.png") center no-repeat;
+}
+
+#navitem6 b {
+    background: url("../images/admin/iconfont-thin014planepapersend.png") center no-repeat;
+}
+
+#navitem7 b {
+    background: url("../images/admin/iconfont-minesetting.png") center no-repeat;
+}
+
+#navitem8 b {
+    background: url("../images/admin/iconfont-share.png") center no-repeat;
+}
+
+#navitem9 b {
+    background: url("../images/admin/iconfont-analysispageviewiconuser.png") center no-repeat;
+}
+
+#navitem10 b{
+    background: url("../images/admin/iconfont-share.png") center no-repeat;
+}
+
+#navitem11 b{
+    background: url("../images/admin/iconfont-analysispageviewiconuser.png") center no-repeat;
+}
+
+#navitem12 b{
+    background: url("../images/admin/iconfont-moneyhollow.png") center no-repeat;
+}
+
+#navitem13 b{
+    background: url("../images/admin/iconfont-erweima.png") center no-repeat;
+}
+
+#navitem14 b{
+    background: url("../images/admin/iconfont-iconfk.png") center no-repeat;
+}
+
+#navitem15 b{
+    background: url("../images/admin/iconfont-goods.png") center no-repeat;
+    background-size:27px !important;
+}
+
+.navItem:hover,.navItem.hover {
+    color: #86c440;
+    background-color: #fafafa !important;
+}
+
+#main-mid {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+#main-mid-left {
+    float: left;
+    width: 75%;
+    background: #fff;
+    overflow: hidden;
+}
+
+#main-mid-right {
+    margin-left: 75%;
+    padding-left: 15px;
+}
